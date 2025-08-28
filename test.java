@@ -1,11 +1,10 @@
-import Student.Student_Management_System.Student;  // ✅ Import inner class
+import Student.Search;
 
 public class test {
     public static void main(String[] args) {
-        Student s1 = new Student("Shashank", "CSE(AI)", 101, 21);
-        System.out.println("Student Name: " + s1.name);
-        System.out.println("Department: " + s1.department); 
-        System.out.println("Roll No: " + s1.roll_no);
-        System.out.println("Age: " + s1.age);
+         Search search = new Search();
+        search.search(101);
+        search.search("Shashank", "Computer Science and Engineering(Artificial Intelligence)");
+        search.search("Raj", 226);
     }
 }
