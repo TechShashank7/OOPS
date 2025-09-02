@@ -32,8 +32,6 @@ public class Student {
         System.out.println("search by the roll_no"+ roll_no);
     }
 
-
-
     public void studying(int no_of_hours){
 
         System.out.println("the student" +name+ "is studying for" + no_of_hours);
@@ -50,6 +48,45 @@ public class Student {
     public void payfee(){
         System.out.println("The student" + name + "pay the tution fee" );
     }
+    public String getName(){
+        return  name;
+    }
+    public void setName(String Name){
+        this.name=Name;
+    }
+
+    public String getDepartment() {
+        return Department;
+    }
+
+    public int getRollNo() {
+        return RollNo;
+    }
+
+    public float getAge() {
+        return age;
+    }
+
+    public static String getCollegename() {
+        return collegename;
+    }
+
+    public void setDepartment(String department) {
+        Department = department;
+    }
+
+    public void setRollNo(int rollNo) {
+        RollNo = rollNo;
+    }
+
+    public void setAge(float Age) {
+        age = Age;
+    }
+
+    public static void setCollegename(String collegename) {
+        Student.collegename = collegename;
+    }
+
     public static void main(String args[]){
         Student student1 = new Student();
         Student student2 = new Student("Shashank" , "AI" , 226 , 20);
