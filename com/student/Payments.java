@@ -19,7 +19,7 @@ class UPIPayment extends Payments{
         System.out.println("Payment successful");
     }
 }
-class MainClass{
+class Main {
     public static void main(String[] args){
         Payments p1=new UPIPayment();
         p1.pay();
