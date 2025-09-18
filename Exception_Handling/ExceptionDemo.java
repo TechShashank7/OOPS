@@ -9,7 +9,7 @@ public class ExceptionDemo {
         catch (ArithmeticException e){
             System.out.print("Error: Division by zero is not allowed.");
         }
-        catch (NullPointerException e){ //if first catch block  doesnt satisfy the exception then go to this block
+        catch (NullPointerException e){ //if first catch block  doesn't satisfy the exception then go to this block
             System.out.print("Caught a NullPointerException!");
         }
 
